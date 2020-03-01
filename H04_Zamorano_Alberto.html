@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Calculator</title>
+    <style>
+        .center {
+            margin: 0 auto;
+            margin-left: 50%;
+            margin-right: -50%;
+        }
+        
+        .inputTable {
+            border: 0px;
+            border-collapse: collapse;
+            border-spacing: 0px;
+        }
+        
+        .inputTable .button {
+            display: inline-block;
+        }
+        
+        .in input {
+            text-align: right;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        
+        .left {
+            text-align: left;
+        }
+        
+        .rCenter {
+            margin-left: 9%;
+        }
+        
+        .result {
+            text-align: right;
+            background-color: burlywood;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<form id="input" class="center">
+    <h5>Retirement Calculator</h5>
+    <table class="inputTable">
+        <tr>
+            <td class="in"><input type="text" placeholder="25"></td>
+            <td class="in"><input type="text" placeholder="65"></td>
+        </tr>
+        <tr>
+            <td class="in"><input type="text" placeholder="5000"></td>
+            <td class="in"><input type="text" placeholder="10"></td>
+
+        </tr>
+        <tr>
+            <td class="in"><input type="text" placeholder="2.0"></td>
+            <td class="in"><input type="text" placeholder="7.0"></td>
+
+        </tr>
+        <tr>
+            <td class="button"><button>Clear</button></td>
+            <td class="button"><button>Defaults</button></td>
+            <td id="make"><button>Make Me Rich!</button></td>
+        </tr>
+    </table>
+</form>
+<div id="summary" class="center">
+    <table class="rCenter">
+        <tr>
+            <th class="right">40</th>
+            <th class="left">Years to invest</th>
+        </tr>
+        <tr>
+            <th class="right">1,473,440</th>
+            <th class="left">Retirement Fund</th>
+        </tr>
+        <tr>
+            <th class="right">3,130,501</th>
+            <th class="left">Lifeytime Salary</th>
+        </tr>
+        <tr>
+            <th class="right">313,050</th>
+            <th class="left">Total saved</th>
+        </tr>
+        <tr>
+            <th class="right">1,160,390</th>
+            <th class="left">Earned Interest</th>
+        </tr>
+</div>
+<div id="detailTable" class="center">
+    <table class="result">
+        <tr>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Savings</th>
+            <th>Interest</th>
+            <th>Retirement</th>
+        </tr>
+        <tr>
+            <th>25</th>
+            <th>50,000</th>
+            <th>5,000</th>
+            <th>350</th>
+            <th>5,350</th>
+        </tr>
+        <tr>
+            <th>26</th>
+            <th>51,000</th>
+            <th>5,100</th>
+            <th>732</th>
+            <th>11,182</th>
+        </tr>
+        <tr>
+            <th>27</th>
+            <th>52,060</th>
+            <th>5,202</th>
+            <th>1,147</th>
+            <th>17,530</th>
+        </tr>
+        <tr>
+            <th>28</th>
+            <th>53,060</th>
+            <th>5,306</th>
+            <th>1,599</th>
+            <th>24,435</th>
+        </tr>
+        <tr>
+            <th>29</th>
+            <th>54,122</th>
+            <th>5,412</th>
+            <th>2,089</th>
+            <th>31,936</th>
+        </tr>
+    </table>
+</div>
+
+
+<body>
+
+</body>
+
+</html>
