@@ -1,75 +1,39 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h05_Zamorano_Alberto.css"></link>
+    <script type="text/javascript" href="h05_Zamorano_Alberto.js"></script>
     <title>Retirement Calculator</title>
-    <style>
-        .center {
-            margin: 0 auto;
-            margin-left: 50%;
-            margin-right: -50%;
-        }
-        
-        .inputTable {
-            border: 0px;
-            border-collapse: collapse;
-            border-spacing: 0px;
-        }
-        
-        .inputTable .button {
-            display: inline-block;
-        }
-        
-        .in input {
-            text-align: right;
-        }
-        
-        .right {
-            text-align: right;
-        }
-        
-        .left {
-            text-align: left;
-        }
-        
-        .rCenter {
-            margin-left: 9%;
-        }
-        
-        .result {
-            text-align: right;
-            background-color: burlywood;
-            border: 2px solid black;
-        }
-    </style>
 </head>
-
+<!-- Forum Start Off HTML -->
 <form id="input" class="center">
-    <h5>Retirement Calculator</h5>
+    <!-- H1 element shows  Retirement Calculator -->
+    <h1 id="head">Retirement Calculator</h1>
+        <!-- Create table to input boxes in grid format -->
     <table class="inputTable">
         <tr>
-            <td class="in"><input type="text" placeholder="25"></td>
-            <td class="in"><input type="text" placeholder="65"></td>
+            <td class="in" type="text"><input id="startingAge" type="text"></td>
+            <td class="in" ><input id="retirmentAge" type="text" ></td>
         </tr>
         <tr>
-            <td class="in"><input type="text" placeholder="5000"></td>
-            <td class="in"><input type="text" placeholder="10"></td>
+            <td class="in" ><input id="salary" type="text" ></td>
+            <td class="in"><input id="investment" type="text" ></td>
 
         </tr>
         <tr>
-            <td class="in"><input type="text" placeholder="2.0"></td>
-            <td class="in"><input type="text" placeholder="7.0"></td>
+            <td class="in"><input id="raise" type="text" ></td>
+            <td class="in"><input id="interstRate" type="text" ></td>
 
         </tr>
         <tr>
             <td class="button"><button>Clear</button></td>
             <td class="button"><button>Defaults</button></td>
-            <td id="make"><button>Make Me Rich!</button></td>
+            <td class="make"><button onclick="printThings()">Make Me Rich!!</button></td>
         </tr>
     </table>
-</form>
-<div id="summary" class="center">
+    <!--  Summary Table -->
     <table class="rCenter">
         <tr>
             <th class="right">40</th>
@@ -91,8 +55,8 @@
             <th class="right">1,160,390</th>
             <th class="left">Earned Interest</th>
         </tr>
-</div>
-<div id="detailTable" class="center">
+    </table>
+    <!-- Amortization Schedule -->
     <table class="result">
         <tr>
             <th>Age</th>
@@ -137,11 +101,7 @@
             <th>31,936</th>
         </tr>
     </table>
-</div>
-
-
-<body>
-
+</form>
 </body>
 
 </html>

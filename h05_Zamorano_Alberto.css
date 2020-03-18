@@ -1,0 +1,55 @@
+/* Internal CSS in Head */
+/* Center H1 element with id of head and remove bottom margin */
+#head{
+    text-align: center;
+    margin-bottom: 0px;
+}
+/* Change backgorund color for body */
+body{
+    background-color: lightsteelblue;
+}
+/* center and change background color for all center class */
+.center {
+    margin: auto;
+    background-color: lightsteelblue;
+    width: min-content;
+}
+/* remove border and spacing around inputs by targeting the inputTable class */
+.inputTable {
+    border: 0px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: auto;
+}
+/* display button next to each other by putting htem in inline blocks */
+.inputTable .button {
+    display: inline-block;
+}
+/* Alight the data inside the input to the right side */
+.in input {
+    text-align: right;
+}
+/* Alight all text to the right with class of .right */
+.right {
+    text-align: right;
+}
+/* Alight all text to the left with class of .left */
+.left {
+    text-align: left;
+}
+/* Center the Table summary by targeting the class */
+.rCenter {
+    margin: auto;
+}
+/* center alight text to the right change background color and show boarder to 
+Detail Table */
+.result {
+    text-align: right;
+    background-color: burlywood;
+    border: 2px solid black;
+}
+/* Add 10px padding to the left and right to the contents of the Deails Table */
+.result tr th{
+    padding-left: 10px;
+    padding-right:10px;
+}
